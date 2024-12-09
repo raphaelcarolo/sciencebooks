@@ -1,0 +1,264 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial scale=1.0">
+    <title> ScienceBooks </title>
+    <link rel="stylesheet" href="reset.css">
+    
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
+    <link rel="stylesheet" href="styles.css">
+<link href="https://fonts.googleapis.com/css2?family=Josefin+Sans:ital,wght@0,100..700;1,100..700&display=swap" rel="stylesheet">
+    
+</head>
+
+<body>
+    <header class="cabeçalho">
+        <div class="container">
+            <input type="checkbox" id="menu" class="container__botao">
+            <label for="menu">
+                <span class="cabeçalho__menu-hamburguer container__imagem"></span>
+            </label>
+            <ul class="lista-menu">
+                <li class="lista-menu__titulo">Categorias</li>
+                <li class="lista-menu__item">
+                    <a href="#" class="lista-menu__link">Evolução</a>
+                </li>
+                <li class="lista-menu__item">
+                    <a href="#" class="lista-menu__link">Fisiologia</a>
+                </li>
+                <li class="lista-menu__item">
+                    <a href="#" class="lista-menu__link">Educação</a>
+                </li>
+                <li class="lista-menu__item">
+                    <a href="#" class="lista-menu__link">Neurociência</a>
+                </li>
+                <li class="lista-menu__item">
+                    <a href="#" class="lista-menu__link">Psicobiologia</a>
+                </li>
+            </ul>
+            <img src="img/Logo.svg" alt="Logo da ScienceBooks" class="container__imagem">
+            <h1 class="container__titulo"><b class="container__titulo--negrito">Science</b>Books</h1>
+        </div>
+
+        <ul class="opções">
+            <input type="checkbox" id="opções-menu" class="opções__botão">
+            <label for="opções-menu">
+            <li class="opções__item">Categorias</li>
+        </label>
+
+        <ul class="lista-menu">
+            <li class="lista-menu__item">
+                <a href="#" class="lista-menu__link">Evolução</a>
+            </li>
+            <li class="lista-menu__item">
+                <a href="#" class="lista-menu__link">Fisiologia</a>
+            </li>
+            <li class="lista-menu__item">
+                <a href="#" class="lista-menu__link">Educação</a>
+            </li>
+            <li class="lista-menu__item">
+                <a href="#" class="lista-menu__link">Neurociência</a>
+            </li>
+            <li class="lista-menu__item">
+                <a href="#" class="lista-menu__link">Psicobiologia</a>
+            </li>
+        </ul>
+
+
+            <li class="opções__item"><a href="#" class="opções__link">Favoritos</li>
+            <li class="opções__item"><a href="#" class="opções__link">Minha estante</li>
+        </ul>
+
+        <div class="container">
+            <a href="#"><img src="img/Favoritos.svg" alt="Meus favoritos" class="container__imagem container__imagem-transparente" ></a>
+            <a href="#" class="container__link"><img src="img/Compras.svg" alt="Carrinhos de compras" class="container__imagem"> <p class="container__texto">Meu perfil</p> </a>
+            <a href="#" class="container__link"><img src="img/Usuário.svg" alt="Meu perfil" class="container__imagem"> <p class="container__texto">Minha sacola</p></a>
+        </div>
+
+    </header>
+
+    <section class="banner">
+        <h2 class="banner__titulo">Já sabe por onde começar?</h2>
+        <p class="banner__texto">Encontre em nossa estante o que precisa para seu desenvolvimento!</p>
+        <input type="search" class="banner__pesquisa" placeholder="Qual será sua próxima leitura?">
+    </section>
+
+    <section class="carrossel">
+        <h2 class="carrossel__titulo">Novos lançamentos</h2>
+        <!-- Slider main container -->
+         <div class="carrossel__container">
+        <div class="swiper">
+
+            <div class="swiper-pagination"></div>
+            <!-- Additional required wrapper -->
+            <div class="swiper-wrapper">
+                <!-- Slides -->
+                <div class="swiper-slide"><img src="img/OrigemDasEspecies.svg"
+                        alt="Origem das espécies de Charles Darwin"></div>
+                <div class="swiper-slide"><img src="img/OGeneEgoista.svg" alt="O Gene Egoísta de Richard Dawkins"></div>
+                <div class="swiper-slide"><img src="img/OsFundamentosDaEtologia.svg"
+                        alt="Os fundamentos da etologia de Konrad Lorenz"></div>
+                <div class="swiper-slide"><img src="img/AutoEficacia.svg" alt="Auto Eficácia de Albert Bandurra"></div>
+                <div class="swiper-slide"><img src="img/TeoriaSocialCognitiva.svg"
+                        alt="Teorisa social cognitiva de Albert Bandurra"></div>
+                <div class="swiper-slide"><img src="img/psicobiologia.svg"
+                        alt="Psicobiologia:as bases biológicas do comportamento de James L. Mcgaugh"></div>
+            </div>
+            <!-- If we need pagination -->
+            <div class="swiper-pagination"></div>
+
+            <!-- If we need navigation buttons -->
+            <div class="swiper-button-prev"></div>
+            <div class="swiper-button-next"></div>
+
+            </div>
+
+            <div class="card">
+                <!-- 1° linha-->
+                <div class="card__descrição">
+                    <!-- 1° coluna-->
+                    <div class="descrição">
+                        <h3 class="descrição__titulo">Talvez você também se interesse por...</h3>
+                        <h2 class="descrição__titulo-livro">O mundo assombrado pelos demônios: A ciência como uma vela.</h2>
+                        <p class="descrição__texto">Explore o método científico e aprenda a importância de ser crítico e cético em seus pensamentos</p>
+                    </div>
+                    <!-- 2° coluna-->
+                    <img src="img/card.svg" class="descrição__imagem"> 
+                </div>
+
+                <!-- 2° linha-->
+                <div class="card__botões">
+                    <ul class="botões">
+                      <li class="botões__item">
+                        <img src="img/Favoritos.svg" alt="Favoritar livro" />
+                      </li>
+                      <li class="botões__item">
+                        <img src="img/Compras.svg" alt="Adicionar no carrinho de compras" />
+                      </li>
+                    </ul>
+                    <a href="#" class="botões__ancora">Saiba mais</a>
+                  </div>
+            </div>
+         </div>
+    </section>
+    <section class="topicos">
+        <h2 class="topicos__titulo">Referências para prova de mestrado</h2>
+        <ul class="topicos__lista">
+            <li class="topicos__item">
+                <a href="https://drive.google.com/file/d/1r1Yw7qhzFGgD0b-r3o9jPHNrMpcCB3Ia/view?usp=drive_link" class="topicos__link">Motivação e Emoção</a>
+            </li>
+            <li class="topicos__item">
+                <a href="https://drive.google.com/file/d/162QS8kP_ud4nfArba105MjUA8-kiEno8/view?usp=drive_link" class="topicos__link">Aprendizagem: Comportamento, Linguagem e Cognição</a>
+            </li>
+            <li class="topicos__item">
+                <a href="https://drive.google.com/file/d/1_REyf_NxJNcU_jlMlcHjTLGyOTGRC4b1/view?usp=drive_link" class="topicos__link">Sensação e Percepção</a>
+            </li>
+            <li class="topicos__item">
+                <a href="https://drive.google.com/file/d/1aJ59Bgq68mUE0Yat4RccM9Vg7UnDINtc/view?usp=drive_link" class="topicos__link">Psicologia Cognitiva, São Paulo: Artes Médicas.</a>
+            </li>
+            <li class="topicos__item">
+                <a href="#" class="topicos__link">Fundamentos da Psicofarmacologia.</a>
+            </li>
+            <li class="topicos__item">
+                <a href="https://drive.google.com/drive/folders/1yiblL1HZ9wh-sN2BYAOCL1PGm4GJn4Ox" class="topicos__link">Psicofisiologia</a>
+            </li>
+            <li class="topicos__item">
+                <a href="https://drive.google.com/file/d/1HBWhoaRHdVDURv1qnvjF_bBW51MJ4tIJ/view?usp=drive_link" class="topicos__link">Cem Bilhões de Neurônios. Conceitos Fundamentais de
+                    Neurociência.</a>
+            </li>
+            <li class="topicos__item">
+                <a href="https://drive.google.com/file/d/1x0NLZpJtgWOM5uwrZeIW_YBZgzYvx5Mt/view?usp=drive_link" class="topicos__link">Metodologia de pesquisa em Psicologia</a>
+            </li>
+            <li class="topicos__item">
+                <a href="https://drive.google.com/file/d/1TZcXH0MHWPiaCpNZkzOSsyPj85IdvdQ9/view?usp=drive_link" class="topicos__link"> Métodos de pesquisa em ciências do comportamento </a>
+            </li>
+        </ul>
+
+    </section>
+
+    <section class="contato">
+        <div class="contato__descrição">
+        <h2 class="contato__titulo">Faça também a sua biblioteca personalizada!!!</h2>
+        <p class="contato__texto">Precisa do código? Entre em contato via e-mail que eu te envio!</p>
+        </div>
+        <input type="email" placeholder="Coloque seu e-mail aqui" class="contato_email" />
+    </section>
+
+    <hr />
+
+    <footer class="rodapé">
+        <h2 class="rodapé__titulo"> Milho Codes
+            <img src="img/milhocodes.svg" alt="logo milho codes" class="rodapé__titulo">
+        </h2>
+        
+        <ul class="lista-rodapé">
+            <li class="lista-rodapé__titulo">Educação</li>
+            <li class="lista-rodapé__item">
+                <img src="img/sb.svg" alt="Logo do ScienceBooks">
+                <a href="#" class="lista-rodapé__link">Science Books</a>
+            </li>
+            <li class="lista-rodapé__item">
+                <img src="img/bee.svg" alt="Projetos futuros">
+                <a href="#" class="lista-rodapé__link">Projetos futuros</a>
+            </li>
+            <li class="lista-rodapé__item">
+                <img src="img/bee.svg" alt="Projetos futuros">
+                <a href="#" class="lista-rodapé__link">Projetos futuros</a>
+            </li>
+        </ul>
+
+        <ul class="lista-rodapé">
+            <li class="lista-rodapé__titulo">Biologia</li>
+            <li class="lista-rodapé__item">
+                <img src="img/bee.svg" alt="Projetos Futuros">
+                <a href="#" class="lista-rodapé__link">Projetos Futuros</a>
+            </li>
+            <li class="lista-rodapé__item">
+                <img src="img/bee.svg" alt="Projetos futuros">
+                <a href="#" class="lista-rodapé__link">Projetos futuros</a>
+            </li>
+            <li class="lista-rodapé__item">
+                <img src="img/bee.svg" alt="Projetos futuros">
+                <a href="#" class="lista-rodapé__link">Projetos futuros</a>
+            </li>
+        </ul>
+
+        <ul class="lista-rodapé">
+            <li class="lista-rodapé__titulo">Análise de Dados</li>
+            <li class="lista-rodapé__item">
+                <img src="img/bee.svg" alt="Projetos Futuros">
+                <a href="#" class="lista-rodapé__link">Projetos Futuros</a>
+            </li>
+            <li class="lista-rodapé__item">
+                <img src="img/bee.svg" alt="Projetos futuros">
+                <a href="#" class="lista-rodapé__link">Projetos futuros</a>
+            </li>
+            <li class="lista-rodapé__item">
+                <img src="img/bee.svg" alt="Projetos futuros">
+                <a href="#" class="lista-rodapé__link">Projetos futuros</a>
+            </li>
+        </ul>
+        
+    </footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+    <script>
+        const swiper = new Swiper('.swiper', {
+            spaceBetween: 10,
+            slidesPerView: 3,
+            pagination: {
+    el: '.swiper-pagination',
+    type: 'bullets',
+  },
+        });
+    </script>
+</body>
+
+</html>
